@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+#principal {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#botones {
+    float: left;
+    margin-right: 20px;
+}
+
+#botones button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contenido-dinamico {
+    overflow: hidden; /* Limpiar el float de los botones */
+}
+
+#resultado {
+    margin-top: 20px;
+}
+
+#formulario {
+    display: none; /* Ocultar el formulario inicialmente */
+    margin-top: 20px;
+}
+
+#formulario label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#formulario input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#formulario button {
+    background-color: #27ae60;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
