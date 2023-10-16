@@ -8,7 +8,7 @@ body {
 #principal {
     width: 80%;
     margin: 20px auto;
-    background-color: #e60a0a;
+    background-color: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -50,7 +50,7 @@ body {
 }
 
 #formulario input {
-    width: 100%;
+    width: 90%;
     padding: 8px;
     margin-bottom: 10px;
 }
@@ -62,4 +62,10 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+p{
+    color: #3498db;
+    text-align: center;
+    font-weight: bold;
+
 }

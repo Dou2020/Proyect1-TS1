@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <title>Gestión de Productos</title>
     <link rel="stylesheet" href="estilo.css"/>
-
 </head>
 <body>
     <div id="principal">
+        <h1 style="text-align: center;">Bodega Grande</h1>
+
         <div id="botones">
             <button onclick="mostrarFormulario()">Agregar Producto</button>
             <button onclick="cambiarContenido('Contenido 2')">Modificar Producto</button>
@@ -36,9 +37,11 @@
     <script>
         function mostrarFormulario() {
             document.getElementById('formulario').style.display = 'block';
+            limpiarResultado(); // Agregamos esta línea para limpiar el resultado
         }
 
         function cambiarContenido(contenido) {
+            document.getElementById('formulario').style.display = 'none';
             document.getElementById('resultado').innerText = contenido;
         }
 
@@ -48,15 +51,24 @@
             var precio = document.getElementById('precio').value;
             var imagen = document.getElementById('imagen').value;
             var resultado = `
-                Producto: ${nombre}, 
-                Cantidad: ${cantidad}, 
-                Precio: ${precio},
-                Imagen: <img src="${imagen}" alt="${nombre}" style="max-width: 100px;">`;
-            
+                <p>Producto agregado con éxito</p>
+                <p>Producto: ${nombre}</p>
+                <p>Cantidad: ${cantidad}</p>
+                <p>Precio: ${precio}</p>
+                <p>Imagen:</p>
+                <p> <img src="${imagen}" alt="${nombre}" style="max-width: 100px;"></p>`;
+
             document.getElementById('resultado').innerHTML = resultado;
 
-
             document.getElementById('formulario').style.display = 'none';
+            limpiarFormulario(); // Agregamos esta línea para limpiar el formulario
+        }
+
+        function limpiarResultado() {
+            document.getElementById('resultado').innerHTML = '';
+        }
+
+        function limpiarFormulario() {
             document.getElementById('nombre').value = '';
             document.getElementById('cantidad').value = '';
             document.getElementById('precio').value = '';
