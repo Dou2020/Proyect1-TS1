@@ -4,7 +4,26 @@ body {
     margin: 0;
     padding: 0;
 }
+#tabla {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    
+}
 
+#tabla th, #tabla td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#tabla th {
+    background-color: #f2f2f2;
+}
+
+#tabla  tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
 #principal {
     width: 80%;
     margin: 20px auto;
@@ -43,7 +62,6 @@ body {
     display: none; /* Ocultar el formulario inicialmente */
     margin-top: 20px;
 }
-
 #formulario label {
     display: block;
     margin-bottom: 5px;
@@ -62,6 +80,27 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+#modificarForm{
+    display: none;
+    margin-top: 20px; 
+}
+#modificarForm input{
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 10px;    
+}
+#modificarForm label{
+    display: block;
+    margin-bottom: 5px;
+}
+#modificarForm button{
+    background-color: #27ae60;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;   
 }
 p{
     color: #3498db;
