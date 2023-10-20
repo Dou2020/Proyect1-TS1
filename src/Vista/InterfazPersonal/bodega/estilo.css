@@ -4,6 +4,24 @@ body {
     margin: 0;
     padding: 0;
 }
+#cerrar-sesion {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#cerrar-sesion button {
+    background-color: #0b9fe9; /* Color de fondo rojo */
+    color: #fff; /* Color de texto blanco */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#cerrar-sesion button:hover {
+    background-color: #c0392b; /* Cambio de color al pasar el mouse */
+}
 #tabla {
     border-collapse: collapse;
     width: 100%;

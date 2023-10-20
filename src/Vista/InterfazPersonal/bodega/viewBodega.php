@@ -7,6 +7,9 @@
 </head>
 <body>
     <div id="principal">
+        <div id="cerrar-sesion">
+            <button onclick="cerrarSesion()">Cerrar Sesión</button>
+        </div>
         <h1 style="text-align: center;">Area de bodega</h1>
 
         <div id="botones">
@@ -128,6 +131,10 @@
             // Aquí deberías implementar la lógica para modificar el producto con el código proporcionado
         }
 
+        function cerrarSesion() {
+            // Implementa la lógica para cerrar la sesión del usuario aquí
+        }
+
         function limpiarResultado() {
             document.getElementById('resultado').innerHTML = '';
         }
@@ -140,4 +147,3 @@
     </script>
 </body>
 </html>
-
