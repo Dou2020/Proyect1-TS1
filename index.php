@@ -58,6 +58,7 @@
             </div>
             <div class="row">
               	<?php
+                //Ejecuta la consulta de los ultimos productos para mostrar
                   include 'library/configServer.php'; //<!--Referencia por cambiar -->
                   include 'library/consulSQL.php'; //<!--Referencia por cambiar --asdasd>
                   $consulta= ejecutarSQL::consultar("SELECT * FROM producto WHERE Stock > 0 AND Estado='Activo' ORDER BY id DESC LIMIT 7");
