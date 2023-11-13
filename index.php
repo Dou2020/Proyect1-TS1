@@ -2,11 +2,11 @@
 <html lang="es">
 <head>
     <title>Inicio</title>
-    <?php include './inc/link.php'; ?>
+    <?php include './inc/link.php'; ?> <!--Referencia por cambiar -->
 </head>
 
 <body id="container-page-index">
-    <?php include './inc/navbar.php'; ?>
+    <?php include './inc/navbar.php'; ?> <!--Referencia por cambiar -->
     
     <section id="slider-store" class="carousel slide" data-ride="carousel" style="padding: 0;">
 
@@ -58,8 +58,8 @@
             </div>
             <div class="row">
               	<?php
-                  include 'library/configServer.php';
-                  include 'library/consulSQL.php';
+                  include 'library/configServer.php'; //<!--Referencia por cambiar -->
+                  include 'library/consulSQL.php'; //<!--Referencia por cambiar --asdasd>
                   $consulta= ejecutarSQL::consultar("SELECT * FROM producto WHERE Stock > 0 AND Estado='Activo' ORDER BY id DESC LIMIT 7");
                   $totalproductos = mysqli_num_rows($consulta);
                   if($totalproductos>0){
@@ -115,6 +115,6 @@
         </div>
     </section>
 
-    <?php include './inc/footer.php'; ?>
+    <?php include './inc/footer.php'; ?> <!--Referencia por cambiar -->
 </body>
 </html>
