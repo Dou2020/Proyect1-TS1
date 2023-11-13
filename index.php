@@ -2,11 +2,11 @@
 <html lang="es">
 <head>
     <title>Inicio</title>
-    <?php include './inc/link.php'; ?> <!--Referencia por cambiar -->
+    <?php include './inc/link.php'; ?> <!--llamadas de --Referenciay estilos -->
 </head>
 
 <body id="container-page-index">
-    <?php include './inc/navbar.php'; ?> <!--Referencia por cambiar -->
+    <?php include './inc/navbar.php'; ?> <!--Movilidad entre imagenes -->
     
     <section id="slider-store" class="carousel slide" data-ride="carousel" style="padding: 0;">
 
