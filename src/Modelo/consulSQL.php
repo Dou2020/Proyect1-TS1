@@ -1,9 +1,11 @@
 <?php
 /* Clase para ejecutar las consultas a la Base de Datos*/
 class ejecutarSQL {
+    
     public static function conectar(){
         if(!$con=  mysqli_connect(SERVER,USER,PASS,BD)){
             echo "Error en el servidor, verifique sus datos";
+            echo '<script>alert("Algo ocurrió mal");</script>';
         }
         /* Codificar la información de la base de datos a UTF8*/
         mysqli_set_charset($con, "utf8");
@@ -11,7 +13,7 @@ class ejecutarSQL {
     }
     public static function consultar($query) {
         if (!$consul = mysqli_query(ejecutarSQL::conectar(), $query)) {
-            echo 'Error en la consulta SQL ejecutada';
+            echo '<script>alert("Algo ocurrió mal");</script>';
         }
         return $consul;
     }  
