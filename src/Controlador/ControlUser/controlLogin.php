@@ -16,7 +16,7 @@
                 $_SESSION['claveAdmin']=$clave;
                 $_SESSION['UserType']="Admin";
                 $_SESSION['adminID']=$filaU['id'];
-                echo '<script> location.href="index.php"; </script>';
+                echo '<script> location.href="/index.php"; </script>';
             }else{
               echo 'Error nombre o contraseña invalido';
             }
@@ -30,7 +30,7 @@
                 $_SESSION['claveUser']=$clave;
                 $_SESSION['UserType']="User";
                 $_SESSION['UserNIT']=$filaU['NIT'];
-                echo '<script> location.href="index.php"; </script>';
+                echo '<script> location.href="/index.php"; </script>';
             }else{
                 echo 'Error nombre o contraseña invalido';
             }
