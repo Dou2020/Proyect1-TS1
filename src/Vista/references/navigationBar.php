@@ -12,7 +12,7 @@
             <div class="col-xs-8">
               <div class="contenedor-tabla pull-right">
                 <div class="contenedor-tr">
-                  <a href="./../index.php" class="table-cell-td">Inicio</a>
+                  <a href="./index.php" class="table-cell-td">Inicio</a>
                   <a href="Vista/viewUser/viewProducts.php" class="table-cell-td">Productos a</a>
                   <?php
                       if(!$_SESSION['nombreAdmin']==""){
