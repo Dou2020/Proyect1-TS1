@@ -6,7 +6,7 @@
 </head>
 
 <body id="container-page-index">
-    <?php include 'src/Vista/references/ navigationBar.php'; ?> <!--Movilidad entre imagenes -->
+    <?php include 'src/Vista/references/navigationBar.php'; ?> <!--Movilidad entre imagenes -->
     
     <section id="slider-store" class="carousel slide" data-ride="carousel" style="padding: 0;">
 
@@ -84,7 +84,7 @@
                               <p>$<?php echo $fila['Precio']; ?></p>
                              <?php endif; ?>
                         <p class="text-center">
-                            <a href="infoProd.php?CodigoProd=<?php echo $fila['CodigoProd']; ?>" class="btn btn-primary btn-sm btn-raised btn-block"><i class="fa fa-plus"></i>&nbsp; Detalles</a>
+                            <a href="src/Vista/viewUser/infoProduct.php?CodigoProd=<?php echo $fila['CodigoProd']; ?>" class="btn btn-primary btn-sm btn-raised btn-block"><i class="fa fa-plus"></i>&nbsp; Detalles</a>
                         </p>
                        </div>
                      </div>
