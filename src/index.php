@@ -2,8 +2,9 @@
 <html lang="es">
 <head>
     <title>Inicio</title>
+    
     <?php include './Vista/references/link.php'; ?>
-    <!--<?//php include './inc/link.php'; ?> lamadas de --Referenciay estilos -->
+
 </head>
 
 <body id="container-page-index">
