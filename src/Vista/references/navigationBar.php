@@ -13,11 +13,11 @@
               <div class="contenedor-tabla pull-right">
                 <div class="contenedor-tr">
                   <a href="./index.php" class="table-cell-td">Inicio</a>
-                  <a href="src/Vista/viewUser/viewProducts.php" class="table-cell-td">Productos</a>
+                  <a href="../src/Vista/viewUser/viewProducts.php" class="table-cell-td">Productos a</a>
                   <?php
                       if(!$_SESSION['nombreAdmin']==""){
                           echo ' 
-                              <a href="src/Vista/viewUser/vistaCarrito.php" class="table-cell-td">Carrito</a>
+                              <a href="Vista/viewUser/vistaCarrito.php" class="table-cell-td">Carrito</a>
                               <a href="viewAdmin.php" class="table-cell-td">Administración</a>
                               <a href="#!" class="table-cell-td exit-system">
                                   <i class="fa fa-user"></i>&nbsp;&nbsp;'.$_SESSION['nombreAdmin'].'
@@ -27,7 +27,7 @@
                           echo ' 
 
                               <a href="pedido.php" class="table-cell-td">Pedido</a>
-                              <a href="vistaCarrito.php" class="table-cell-td">Carrito</a>
+                              <a href="./Vista/viewUser/vistaCarrito.php" class="table-cell-td">Carrito</a>
                               <a href="#!" class="table-cell-td exit-system">
                               <i class="fa fa-user"></i>&nbsp;&nbsp;'.$_SESSION['nombreUser'].'
                               </a>

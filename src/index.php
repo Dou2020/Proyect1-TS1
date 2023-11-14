@@ -6,7 +6,7 @@
 </head>
 
 <body id="container-page-index">
-    <?php include 'src/Vista/references/navigationBar.php'; ?> <!--Movilidad entre imagenes -->
+    <?php include './Vista/references/navigationBar.php'; ?> <!--Movilidad entre imagenes -->
     
     <section id="slider-store" class="carousel slide" data-ride="carousel" style="padding: 0;">
 
@@ -60,11 +60,7 @@
               	<?php
                 //Ejecuta la consulta de los ultimos productos para mostrar
                 // No conecta a la base de datos
-<<<<<<< HEAD
-                  include 'src/Config/configDB.php'; //<!--Referencia por cambiar -->\
-=======
                   include 'src/Modelo/configServer.php'; //<!--Referencia por cambiar -->\
->>>>>>> dev
                   include 'src/Modelo/consulSQL.php'; //<!--Referencia por cambiar --asdasd>
                   $consulta= ejecutarSQL::consultar("SELECT * FROM producto WHERE Stock > 0 AND Estado='Activo' ORDER BY id DESC LIMIT 7");
                   $totalproductos = mysqli_num_rows($consulta);
@@ -115,12 +111,12 @@
                 </div>
 
                 <div class="col-xs-12 col-sm-6">
-                    <img src="assets/img/tv.png" alt="Smart-TV" class="img-responsive" style="width: 70%; display: block; margin: 0 auto;">
+                    <img src="/assets/img/tv.png" alt="Smart-TV" class="img-responsive" style="width: 70%; display: block; margin: 0 auto;">
                 </div>
             </div>
         </div>
     </section>
 
-    <?php include 'src/Vista/references/footer.php'; ?> <!--Referencia por cambiar -->
+    <?php include 'Vista/references/footer.php'; ?> <!--Referencia por cambiar -->
 </body>
 </html>
