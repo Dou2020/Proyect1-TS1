@@ -2,11 +2,12 @@
 <html lang="es">
 <head>
     <title>Inicio</title>
+    <?php include './Vista/references/link.php'; ?>
     <!--<?//php include './inc/link.php'; ?> lamadas de --Referenciay estilos -->
 </head>
 
 <body id="container-page-index">
-    <?php include 'src/Vista/references/navigationBar.php'; ?> <!--Movilidad entre imagenes -->
+    <?php include './Vista/references/navigationBar.php'; ?> <!--Movilidad entre imagenes -->
     
     <section id="slider-store" class="carousel slide" data-ride="carousel" style="padding: 0;">
 
