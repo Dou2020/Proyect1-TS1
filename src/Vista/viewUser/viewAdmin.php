@@ -1,8 +1,7 @@
 <?php
     include './../../Config/configSQL.php';
     include './../../Modelo/consulSQL.php';
-    include './../../Controlador/securityPanel.php';
-    include './viewAdmin.php';
+    include './../../Controlador/ControlAdmin/securityPanel.php';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -15,7 +14,7 @@
     <section id="prove-product-cat-config">
         <div class="container">
           <div class="page-header">
-            <h1>Panel de administración <small class="tittles-pages-logo">STORE</small></h1>
+            <h1>Panel de administración <small class="tittles-pages-logo">MINI-SHOPPING</small></h1>
           </div>
           <!--====  Nav Tabs  ====-->
           <ul class="nav nav-tabs nav-justified" style="margin-bottom: 15px;">
@@ -59,8 +58,8 @@
             $content=$_GET['view'];
             $WhiteList=["product","productlist","productinfo","provider","providerlist","providerinfo","category","categorylist","categoryinfo","admin","adminlist","order","bank","account"];
             if(isset($content)){
-              if(in_array($content, $WhiteList) && is_file("./admin/".$content."-view.php")){
-                include "./../../Controlador/".$content."-view.php";
+              if(in_array($content, $WhiteList) && is_file("./../viewAdmin/".$content."-view.php")){
+                include "./../viewAdmin/".$content."-view.php";
               }else{
                 echo '<h2 class="text-center">Lo sentimos, la opción que ha seleccionado no se encuentra disponible</h2>';
               }

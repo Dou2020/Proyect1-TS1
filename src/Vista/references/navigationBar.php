@@ -138,14 +138,14 @@
             <li><a href="/Vista/viewUser/vistaCarrito.php">Carrito</a></li>
             <?php 
                 if(!$_SESSION['nombreAdmin']==""){
-                    echo '<li><a href="configAdmin.php">Administración</a></li>';
+                    echo '<li><a href="/Vista/viewUser/viewProducts.php">Administración</a></li>';
                 }elseif(!$_SESSION['nombreUser']==""){
                     echo '
                     <li><a href="pedido.php">Pedido</a></li>
                     <li><a href="#" class="glyphicon glyphicon-cog userConBtn" data-code="'.$_SESSION['UserNIT'].'"> Configuraciones</a></li>
                     ';
                 }else{
-                    echo '<li><a href="registration.php">Registro</a></li>';
+                    echo '<li><a href="/Vista/viewUser/viewRegistration.php">Registro</a></li>';
                 }
             ?>
         </ul>
@@ -153,7 +153,7 @@
     <?php if(isset($_SESSION['nombreUser'])): ?>
     <div class="modal fade" id="ModalUpUser" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
-        <form class="modal-content FormCatElec" action="process/updateClient.php" method="POST" data-form="save" autocomplete="off">
+        <form class="modal-content FormCatElec" action="/Controlador/ControlUser/client-update.php" method="POST" data-form="save" autocomplete="off">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <h4 class="modal-title" id="myModalLabel">Configuraciones</h4>
