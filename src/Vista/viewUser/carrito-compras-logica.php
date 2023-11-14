@@ -1,6 +1,6 @@
 <?php
-require_once "library/configServer.php";
-require_once "library/consulSQL.php";
+require_once "./Modelo/configServer.php";
+require_once "./Modelo/consulSQL.php";
 
 $productos_carrito = [];
 

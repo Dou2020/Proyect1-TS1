@@ -5,7 +5,9 @@
     <?php include './inc/link.php'; ?>
 </head>
 <body id="container-page-index">
-    <?php include './inc/navbar.php'; ?>
+    <?php include '../Vista/references/navigationBar.php'; //No estoy seguro de que esto funcione por el path
+     
+    ?>
     <section id="container-pedido">
         <div class="container">
             <div class="page-header">
@@ -15,8 +17,9 @@
             <div class="row">
                 <div class="col-xs-12">
                     <?php
-                    require_once "carrito-compras-logica.php";
-
+                     
+                    require_once "src/Vista/viewUser/carrito-compras-logica.php";
+                         
                     if (!empty($productos_carrito)) {
                         echo '<table class="table table-bordered table-hover"><thead><tr class="bg-success"><th>Nombre</th><th>Precio</th><th>Cantidad</th><th>Subtotal</th><th>Acciones</th></tr></thead>';
                         foreach ($productos_carrito as $producto) {
