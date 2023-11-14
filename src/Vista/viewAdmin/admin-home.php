@@ -8,7 +8,7 @@ include '../../Controlador/securityPanel.php';
 
 <head>
     <title>Admin</title>
-    <?php include './../references/link.php'; ?>
+    <?php include 'Vista/references/link.php'; ?>
 </head>
 
 <body id="container-page-configAdmin">
