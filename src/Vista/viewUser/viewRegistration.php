@@ -13,10 +13,10 @@
     <section id="form-registration">
         <div class="container">
             <div class="page-header">
-              <h1>REGISTRO <small class="tittles-pages-logo">STORE</small></h1>
+              <h1>REGISTRO <small class="tittles-pages-logo">Mini-Shopping</small></h1>
             </div>
             <p class="lead text-center">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident assumenda asperiores architecto nostrum blanditiis excepturi voluptatibus, velit ad enim. Aperiam voluptatum est, fugit quisquam libero distinctio nobis porro numquam minus.
+             Regristrate para poder hacer compras y ver todas nuestras ofertas
             </p>
             <div class="row">
                 <div class="col-sm-5 text-center">
