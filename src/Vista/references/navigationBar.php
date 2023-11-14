@@ -1,19 +1,19 @@
 <?php  
     session_start(); 
     error_reporting(E_PARSE);
-   //include './../viewUser/viewProducts.php';
+   
 ?>
 <nav id="navbar-auto-hidden">
         <div class="row hidden-xs">
             <div class="col-xs-4">
-                <p class="text-navbar tittles-pages-logo">STORE</p>
+                <p class="text-navbar tittles-pages-logo">Mini-Shoping</p>
             </div>
             
             <div class="col-xs-8">
               <div class="contenedor-tabla pull-right">
                 <div class="contenedor-tr">
-                  <a href="./index.php" class="table-cell-td">Inicio</a>
-                  <a href="Vista/viewUser/viewProducts.php" class="table-cell-td">Productos a</a>
+                  <a href="/index.php" class="table-cell-td">Inicio</a>
+                  <a href="/Vista/viewUser/viewProducts.php" class="table-cell-td">Productos</a>
                   <?php
                       if(!$_SESSION['nombreAdmin']==""){
                           echo ' 
@@ -134,7 +134,7 @@
         <br><br>
         <ul class="list-unstyled text-center">
             <li><a href="index.php">Inicio</a></li>
-            <li><a href="product.php">Productos</a></li>
+            <li><a href="./product.php">Productos</a></li>
             <li><a href="src/Vista/viewUser/vistaCarrito.php">Carrito</a></li>
             <?php 
                 if(!$_SESSION['nombreAdmin']==""){
