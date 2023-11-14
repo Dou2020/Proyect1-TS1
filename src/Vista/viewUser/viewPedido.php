@@ -8,7 +8,7 @@
 </head>
 <body id="container-page-index">
 
-    <?php include '../references/navbar.php'; ?>
+    <?php include '../references/navigationBar.php'; ?>
 
     <section id="container-pedido">
         <div class="container">
