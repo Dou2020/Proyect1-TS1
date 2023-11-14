@@ -1,5 +1,5 @@
 <?php
-    include './../../Config/configSQL.php';
+    include './../../Config/configDB.php';
     include './../../Modelo/consulSQL.php';
     include './../../Controlador/ControlAdmin/securityPanel.php';
 ?>
@@ -56,7 +56,7 @@
           </ul>
           <?php
             $content=$_GET['view'];
-            $WhiteList=["product","productlist","productinfo","provider","providerlist","providerinfo","category","categorylist","categoryinfo","admin","adminlist","order","bank","account"];
+            $WhiteList=["product","product-list","product-info","provider","provider-list","provider-info","category","category-list","category-info","admin","admin-list","order","bank","account"];
             if(isset($content)){
               if(in_array($content, $WhiteList) && is_file("./../viewAdmin/".$content."-view.php")){
                 include "./../viewAdmin/".$content."-view.php";

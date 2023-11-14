@@ -8,7 +8,7 @@
         </a>
     </li>
     <li>
-        <a href="admin-home.php?view=category-list"><i class="fa fa-list-ol" aria-hidden="true"></i> &nbsp; Categoría de productos</a>
+        <a href="/Vista/viewAdmin/admin-home.php?view=category-list"><i class="fa fa-list-ol" aria-hidden="true"></i> &nbsp; Categoría de productos</a>
     </li>
 </ul>
 <div class="container">
@@ -16,7 +16,7 @@
         <div class="col-xs-12">
             <div class="container-form-admin">
                 <h3 class="text-info text-center">Agregar nueva categoría</h3>
-                <form action="./src/Controlador/ControlAdmin/category-register.php" method="POST" class="FormCatElec" data-form="save">
+                <form action="/Controlador/ControlAdmin/category-register.php" method="POST" class="FormCatElec" data-form="save">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 col-md-4">
