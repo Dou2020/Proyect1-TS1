@@ -12,7 +12,7 @@ include '../../Modelo/consulSQL.php';
 </head>
 <body id="container-page-product">
 
-    <?php include '../references/navbar.php'; ?>
+    <?php include '../references/navigationBar.php'; ?>
 
     <section id="store">
        <br>
