@@ -1,7 +1,7 @@
 <?php  
     session_start(); 
     error_reporting(E_PARSE);
-   
+   //include './../viewUser/viewProducts.php';
 ?>
 <nav id="navbar-auto-hidden">
         <div class="row hidden-xs">
@@ -12,8 +12,8 @@
             <div class="col-xs-8">
               <div class="contenedor-tabla pull-right">
                 <div class="contenedor-tr">
-                  <a href="./index.php" class="table-cell-td">Inicio</a>
-                  <a href="../src/Vista/viewUser/viewProducts.php" class="table-cell-td">Productos a</a>
+                  <a href="./../index.php" class="table-cell-td">Inicio</a>
+                  <a href="Vista/viewUser/viewProducts.php" class="table-cell-td">Productos a</a>
                   <?php
                       if(!$_SESSION['nombreAdmin']==""){
                           echo ' 

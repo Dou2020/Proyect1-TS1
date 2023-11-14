@@ -1,5 +1,5 @@
 <?php
-require_once "./Modelo/configServer.php";
+require_once "./../Modelo/configServer.php";
 require_once "./Modelo/consulSQL.php";
 
 $productos_carrito = [];

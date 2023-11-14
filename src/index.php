@@ -6,7 +6,7 @@
 </head>
 
 <body id="container-page-index">
-    <?php include './Vista/references/navigationBar.php'; ?> <!--Movilidad entre imagenes -->
+    <?php include 'Vista/references/navigationBar.php'; ?> <!--Movilidad entre imagenes -->
     
     <section id="slider-store" class="carousel slide" data-ride="carousel" style="padding: 0;">
 

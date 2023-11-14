@@ -1,17 +1,17 @@
 <?php
-include './library/configServer.php';
-include './library/consulSQL.php';
+include './../../Config/configSQL.php';
+include './../../Model/consulSQL.php';
 ?>
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <title>Productos</title>
-    <?php include './inc/link.php'; ?>
+    <?php include '../references/link.php'; ?>
 </head>
 
 <body id="container-page-product">
-    <?php include './inc/navbar.php'; ?>
+    <?php include '../references/navigationBar.php'; ?>
     <section id="infoproduct">
         <div class="container">
             <div class="row">
@@ -54,9 +54,9 @@ include './library/consulSQL.php';
                                     $imagenFile="./assets/img-products/default.png"; 
                                 }
                                 echo '<br>
-                                <a href="product.php" class="btn btn-lg btn-primary btn-raised btn-block"><i class="fa fa-mail-reply"></i>&nbsp;&nbsp;Regresar a la tienda</a>
+                                <a href="./viewProducts.php" class="btn btn-lg btn-primary btn-raised btn-block"><i class="fa fa-mail-reply"></i>&nbsp;&nbsp;Regresar a la tienda</a>
                             </div>
-
+                                
 
                             <div class="col-xs-12 col-sm-6">
                                 <br><br><br>
@@ -64,11 +64,12 @@ include './library/consulSQL.php';
                             </div>';
                     }
                 ?>
+                
             </div>
         </div>
     </section>
 
-    <?php include './inc/footer.php'; ?>
+    <?php include './../references/footer.php';?>
 
 </body>
 

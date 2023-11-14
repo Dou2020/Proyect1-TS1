@@ -72,7 +72,7 @@ include '../../Modelo/consulSQL.php';
                                <p><?php echo $prod['NombreProd']; ?></p>
                                <p>$<?php echo $prod['Precio']; ?></p>
                                <p class="text-center">
-                                   <a href="infoProd.php?CodigoProd=<?php echo $prod['CodigoProd']; ?>" class="btn btn-primary btn-raised btn-sm btn-block"><i class="fa fa-plus"></i>&nbsp; Detalles</a>
+                                   <a href="./infoProducts.php?CodigoProd=<?php echo $prod['CodigoProd']; ?>" class="btn btn-primary btn-raised btn-sm btn-block"><i class="fa fa-plus"></i>&nbsp; Detalles</a>
                                </p>
 
                              </div>
@@ -93,7 +93,7 @@ include '../../Modelo/consulSQL.php';
                           </li>
                       <?php else: ?>
                           <li>
-                              <a href="search.php?term=<?php echo $search; ?>&pag=<?php echo $pagina-1; ?>">
+                              <a href="./search.php?term=<?php echo $search; ?>&pag=<?php echo $pagina-1; ?>">
                                   <span aria-hidden="true">&laquo;</span>
                               </a>
                           </li>
@@ -103,9 +103,9 @@ include '../../Modelo/consulSQL.php';
                       <?php
                           for($i=1; $i <= $numeropaginas; $i++ ){
                               if($pagina == $i){
-                                  echo '<li class="active"><a href="search.php?term='.$search.'&pag='.$i.'">'.$i.'</a></li>';
+                                  echo '<li class="active"><a href="./search.php?term='.$search.'&pag='.$i.'">'.$i.'</a></li>';
                               }else{
-                                  echo '<li><a href="search.php?term='.$search.'&pag='.$i.'">'.$i.'</a></li>';
+                                  echo '<li><a href="./search.php?term='.$search.'&pag='.$i.'">'.$i.'</a></li>';
                               }
                           }
                       ?>
@@ -119,7 +119,7 @@ include '../../Modelo/consulSQL.php';
                           </li>
                       <?php else: ?>
                           <li>
-                              <a href="search.php?term=<?php echo $search; ?>&pag=<?php echo $pagina+1; ?>">
+                              <a href="./search.php?term=<?php echo $search; ?>&pag=<?php echo $pagina+1; ?>">
                                   <span aria-hidden="true">&raquo;</span>
                               </a>
                           </li>

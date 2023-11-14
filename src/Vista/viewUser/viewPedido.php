@@ -3,12 +3,12 @@
 <head>
     <title>Pedido</title>
 
-    <?php include '../references/link.php'; ?>
+    <?php include './../references/link.php'; ?>
 
 </head>
 <body id="container-page-index">
 
-    <?php include '../references/navigationBar.php'; ?>
+    <?php include './../references/navigationBar.php'; ?>
 
     <section id="container-pedido">
         <div class="container">
@@ -19,8 +19,8 @@
             <div class="row">
               <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                 <?php
-                  require_once "../../Config/configDB.php";
-                  require_once "../../Modelo/consulSQL.php";
+                  require_once "./../../Config/configDB.php";
+                  require_once "./../../Modelo/consulSQL.php";
                   if($_SESSION['UserType']=="Admin" || $_SESSION['UserType']=="User"){
                     if(isset($_SESSION['carro'])){
                 ?>
@@ -208,7 +208,7 @@
     </div>
     <div class="ResForm"></div>
 
-    <?php include '../references/footer.php'; ?>
+    <?php include './../references/footer.php'; ?>
 
 </body>
 </html>
