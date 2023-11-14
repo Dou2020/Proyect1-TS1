@@ -2,7 +2,11 @@
 <html lang="es">
 <head>
     <title>Carrito de compras</title>
+<<<<<<< HEAD
     <?php include '../references/link.php'; ?>
+=======
+    <?php include './../references/link.php'; ?>
+>>>>>>> dev
 </head>
 <body id="container-page-index">
     <?php include '../references/navigationBar.php'; //No estoy seguro de que esto funcione por el path

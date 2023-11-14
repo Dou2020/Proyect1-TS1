@@ -17,8 +17,8 @@
                   <?php
                       if(!$_SESSION['nombreAdmin']==""){
                           echo ' 
-                              <a href="Vista/viewUser/vistaCarrito.php" class="table-cell-td">Carrito</a>
-                              <a href="viewAdmin.php" class="table-cell-td">Administración</a>
+                              <a href="/Vista/viewUser/vistaCarrito.php" class="table-cell-td">Carrito</a>
+                              <a href="/Vista/viewUser/viewAdmin.php" class="table-cell-td">Administración</a>
                               <a href="#!" class="table-cell-td exit-system">
                                   <i class="fa fa-user"></i>&nbsp;&nbsp;'.$_SESSION['nombreAdmin'].'
                               </a>
@@ -26,8 +26,8 @@
                       }else if(!$_SESSION['nombreUser']==""){
                           echo ' 
 
-                              <a href="pedido.php" class="table-cell-td">Pedido</a>
-                              <a href="./Vista/viewUser/vistaCarrito.php" class="table-cell-td">Carrito</a>
+                              <a href="/Vista/viewUser/viewPedido.php" class="table-cell-td">Pedido</a>
+                              <a href="/Vista/viewUser/vistaCarrito.php" class="table-cell-td">Carrito</a>
                               <a href="#!" class="table-cell-td exit-system">
                               <i class="fa fa-user"></i>&nbsp;&nbsp;'.$_SESSION['nombreUser'].'
                               </a>
@@ -38,7 +38,7 @@
                       }else{
                           echo ' 
 
-                          <a href="registration.php" class="table-cell-td">Registro</a>
+                          <a href="/Vista/viewUser/viewRegistration.php" class="table-cell-td">Registro</a>
                               <a href="#" class="table-cell-td" data-toggle="modal" data-target=".modal-login">
                                   <i class="fa fa-user"></i>&nbsp;&nbsp;Login
                               </a>
@@ -88,7 +88,7 @@
               </p>
               <h4 class="modal-title text-center text-primary" id="myModalLabel">Iniciar sesión</h4>
             </div>
-            <form action="process/login.php" method="post" role="form" class="FormCatElec" data-form="login">
+            <form action="/Controlador/ControlUser/controlLogin.php" method="post" role="form" class="FormCatElec" data-form="login">
                 <div class="form-group label-floating">
                     <label class="control-label"><span class="glyphicon glyphicon-user"></span>&nbsp;Nombre</label>
                     <input type="text" class="form-control" name="nombre-login" required="">
@@ -127,15 +127,15 @@
     
     <div id="mobile-menu-list" class="hidden-sm hidden-md hidden-lg">
         <br>
-        <h3 class="text-center tittles-pages-logo">STORE</h3>
+        <h3 class="text-center tittles-pages-logo">MINI-SHOPPING</h3>
         <button class="btn btn-default button-mobile-menu" id="button-close-mobile-menu">
         <i class="fa fa-times"></i>
         </button>
         <br><br>
         <ul class="list-unstyled text-center">
-            <li><a href="index.php">Inicio</a></li>
-            <li><a href="./product.php">Productos</a></li>
-            <li><a href="src/Vista/viewUser/vistaCarrito.php">Carrito</a></li>
+            <li><a href="/index.php">Inicio</a></li>
+            <li><a href="/product.php">Productos</a></li>
+            <li><a href="/Vista/viewUser/vistaCarrito.php">Carrito</a></li>
             <?php 
                 if(!$_SESSION['nombreAdmin']==""){
                     echo '<li><a href="configAdmin.php">Administración</a></li>';
