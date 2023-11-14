@@ -12,8 +12,8 @@
             <div class="col-xs-8">
               <div class="contenedor-tabla pull-right">
                 <div class="contenedor-tr">
-                  <a href="index.php" class="table-cell-td">Inicio</a>
-                  <a href="product.php" class="table-cell-td">Productos</a>
+                  <a href="/index.php" class="table-cell-td">Inicio</a>
+                  <a href="/Vista/viewUser/viewProducts.php" class="table-cell-td">Productos</a>
                   <?php
                       if(!$_SESSION['nombreAdmin']==""){
                           echo ' 
@@ -134,7 +134,7 @@
         <br><br>
         <ul class="list-unstyled text-center">
             <li><a href="index.php">Inicio</a></li>
-            <li><a href="product.php">Productos</a></li>
+            <li><a href="./product.php">Productos</a></li>
             <li><a href="src/Vista/viewUser/vistaCarrito.php">Carrito</a></li>
             <?php 
                 if(!$_SESSION['nombreAdmin']==""){
