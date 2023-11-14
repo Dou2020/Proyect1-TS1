@@ -6,7 +6,7 @@
 <nav id="navbar-auto-hidden">
         <div class="row hidden-xs">
             <div class="col-xs-4">
-                <p class="text-navbar tittles-pages-logo">Mini-Shoping</p>
+                <p class="text-navbar tittles-pages-logo">Mini-Shopping</p>
             </div>
             
             <div class="col-xs-8">
