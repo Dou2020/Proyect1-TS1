@@ -2,11 +2,11 @@
 <html lang="es">
 <head>
     <title>Inicio</title>
-    <?php include './inc/link.php'; ?> <!--llamadas de --Referenciay estilos -->
+    <!--<?//php include './inc/link.php'; ?> lamadas de --Referenciay estilos -->
 </head>
 
 <body id="container-page-index">
-    <?php include './inc/navbar.php'; ?> <!--Movilidad entre imagenes -->
+    <?php include 'src/Vista/references/ navigationBar.php'; ?> <!--Movilidad entre imagenes -->
     
     <section id="slider-store" class="carousel slide" data-ride="carousel" style="padding: 0;">
 
@@ -59,8 +59,9 @@
             <div class="row">
               	<?php
                 //Ejecuta la consulta de los ultimos productos para mostrar
-                  include 'library/configServer.php'; //<!--Referencia por cambiar -->
-                  include 'library/consulSQL.php'; //<!--Referencia por cambiar --asdasd>
+                // No conecta a la base de datos
+                  include 'src/Model/configServer.php'; //<!--Referencia por cambiar -->\
+                  include 'src/Model/consulSQL.php'; //<!--Referencia por cambiar --asdasd>
                   $consulta= ejecutarSQL::consultar("SELECT * FROM producto WHERE Stock > 0 AND Estado='Activo' ORDER BY id DESC LIMIT 7");
                   $totalproductos = mysqli_num_rows($consulta);
                   if($totalproductos>0){
@@ -116,6 +117,6 @@
         </div>
     </section>
 
-    <?php include './inc/footer.php'; ?> <!--Referencia por cambiar -->
+    <?php include 'src/Vista/references/footer.php'; ?> <!--Referencia por cambiar -->
 </body>
 </html>
