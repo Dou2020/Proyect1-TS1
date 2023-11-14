@@ -60,8 +60,8 @@
               	<?php
                 //Ejecuta la consulta de los ultimos productos para mostrar
                 // No conecta a la base de datos
-                  include 'src/Model/configServer.php'; //<!--Referencia por cambiar -->\
-                  include 'src/Model/consulSQL.php'; //<!--Referencia por cambiar --asdasd>
+                  include 'src/Modelo/configServer.php'; //<!--Referencia por cambiar -->\
+                  include 'src/Modelo/consulSQL.php'; //<!--Referencia por cambiar --asdasd>
                   $consulta= ejecutarSQL::consultar("SELECT * FROM producto WHERE Stock > 0 AND Estado='Activo' ORDER BY id DESC LIMIT 7");
                   $totalproductos = mysqli_num_rows($consulta);
                   if($totalproductos>0){
