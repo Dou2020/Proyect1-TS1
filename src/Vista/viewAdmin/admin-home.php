@@ -8,11 +8,11 @@ include '../../Controlador/securityPanel.php';
 
 <head>
     <title>Admin</title>
-    <?php include './../inc/link.php'; ?>
+    <?php include './../references/link.php'; ?>
 </head>
 
 <body id="container-page-configAdmin">
-    <?php include './../inc/navbar.php'; ?>
+    <?php include './../references/navigationBar.php'; ?>
     <section id="prove-product-cat-config">
         <div class="container">
             <div class="page-header">
@@ -71,7 +71,7 @@ include '../../Controlador/securityPanel.php';
             ?>
         </div>
     </section>
-    <?php include './../inc/footer.php'; ?>
+    <?php include './../references/footer.php'; ?>
 </body>
 
 </html>
