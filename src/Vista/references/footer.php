@@ -24,22 +24,22 @@
             <div class="col-sm-4">
                 <h4 class="text-footer">Porque elegirnos</h4>
                 <p> 
-                    Lorem ipsum dolor sit amet,adipisicing elit.</br>
-                    Lorem ipsum dolor sit amet,adipisicing elit.</br>
-                    Lorem ipsum dolor sit amet,adipisicing elit.</br>
-                    Lorem ipsum dolor sit amet,adipisicing elit.</br>
+                    Ofertas y servicio de calidad</br>
+                    Productos de primera instancia siempre</br>
+                    Servicio a domicilio y en Sucursal</br>
+                    Variedad y Calidad, tu mejor opción</br>
                 </p>
             </div>
             <div class="col-sm-4">
-                <h4 class="text-footer" >Direccion</h4>
-                <p style="color: #FFF">El Salvador</p>
-                <p style="color: #FFF">adipisicing elit</p>
-                <p style="font-size:20px" aria-hidden="true">  000 – 000000 / 000 – 000000</p>
-                <p class="fa fa-mobile" style="font-size:20px"  aria-hidden="true">  00000000 / 0000000</p> <a href="#" target="_blank" style="color: #5bc0de">envianos_un_mensaje</a></br>
-                E-mail: <a href="#" target="_blank" style="color: #5bc0de"> &nbsp; ejemplod@dominio.com</a>
+                <h4 class="text-footer" >1 Calle 3-45 zona 3</h4>
+                <p style="color: #FFF">Quetzaltenango</p>
+                <p style="color: #FFF">Guatemala</p>
+                <p style="font-size:20px" aria-hidden="true">  +502 – 30244578 / +502 – 35583130</p>
+                <p class="fa fa-mobile" style="font-size:20px"  aria-hidden="true"></p> <a href="#" target="_blank" style="color: #5bc0de">Envianos un mensaje!</a></br>
+                E-mail: <a href="#" target="_blank" style="color: #5bc0de"> &nbsp; minishopping@cunoc.edu.gt</a>
             </div>
         </div>
     </div>
     <br><br><br>
-    <h5 class="text-center tittles-pages-logo text-footer">STORE &copy; 2021</h5>
+    <h5 class="text-center tittles-pages-logo text-footer">Mini Shopping &copy; 2023</h5>
 </footer>
