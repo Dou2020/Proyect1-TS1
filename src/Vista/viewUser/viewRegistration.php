@@ -28,7 +28,7 @@
                     <div id="container-form">
                        <p class="text-center lead">Registro de Clientes</p>
                        <br><br>
-                       <form class="FormCatElec" action="process/regclien.php" role="form" method="POST" data-form="save">
+                       <form class="FormCatElec" action="../../Controlador/ControlUser/regclien.php" role="form" method="POST" data-form="save">
                           <div class="container-fluid">
                             <div class="row">
                               <div class="col-xs-12">
