@@ -12,7 +12,7 @@ include '../../Modelo/consulSQL.php';
 </head>
 <body id="container-page-product">
 
-    <?php include '../references/navbar.php'; ?>
+    <?php include '../references/navigationBar.php'; ?>
 
     <section id="store">
        <br>
@@ -36,7 +36,7 @@ include '../../Modelo/consulSQL.php';
                         <?php 
                           while($cate=mysqli_fetch_array($checkAllCat, MYSQLI_ASSOC)){
                               echo '
-                                <li><a href="product.php?categ='.$cate['CodigoCat'].'">'.$cate['Nombre'].'</a></li>
+                                <li><a href="viewProducts.php?categ='.$cate['CodigoCat'].'">'.$cate['Nombre'].'</a></li>
                                 <li role="separator" class="divider"></li>
                               ';
                           }
@@ -104,7 +104,7 @@ include '../../Modelo/consulSQL.php';
                               <p>$<?php echo $prod['Precio']; ?></p>
                              <?php endif; ?>
                              <p class="text-center">
-                                 <a href="infoProd.php?CodigoProd=<?php echo $prod['CodigoProd']; ?>" class="btn btn-primary btn-raised btn-sm btn-block"><i class="fa fa-plus"></i>&nbsp; Detalles</a>
+                                 <a href="infoProduct?CodigoProd=<?php echo $prod['CodigoProd']; ?>" class="btn btn-primary btn-raised btn-sm btn-block"><i class="fa fa-plus"></i>&nbsp; Detalles</a>
                              </p>
 
                            </div>
@@ -125,7 +125,7 @@ include '../../Modelo/consulSQL.php';
                         </li>
                     <?php else: ?>
                         <li>
-                            <a href="product.php?categ=<?php echo $categoria; ?>&pag=<?php echo $pagina-1; ?>">
+                            <a href="viewProducts.php?categ=<?php echo $categoria; ?>&pag=<?php echo $pagina-1; ?>">
                                 <span aria-hidden="true">&laquo;</span>
                             </a>
                         </li>
@@ -151,7 +151,7 @@ include '../../Modelo/consulSQL.php';
                         </li>
                     <?php else: ?>
                         <li>
-                            <a href="product.php?categ=<?php echo $categoria; ?>&pag=<?php echo $pagina+1; ?>">
+                            <a href="viewProducts.php?categ=<?php echo $categoria; ?>&pag=<?php echo $pagina+1; ?>">
                                 <span aria-hidden="true">&raquo;</span>
                             </a>
                         </li>

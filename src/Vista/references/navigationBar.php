@@ -1,5 +1,4 @@
 <?php  
-    echo("nada funcionaXd");
     session_start(); 
     error_reporting(E_PARSE);
    
@@ -9,11 +8,12 @@
             <div class="col-xs-4">
                 <p class="text-navbar tittles-pages-logo">STORE</p>
             </div>
+            
             <div class="col-xs-8">
               <div class="contenedor-tabla pull-right">
                 <div class="contenedor-tr">
-                  <a href="index.php" class="table-cell-td">Inicio</a>
-                  <a href="product.php" class="table-cell-td">Productos</a>
+                  <a href="./index.php" class="table-cell-td">Inicio</a>
+                  <a href="src/Vista/viewUser/viewProducts.php" class="table-cell-td">Productos</a>
                   <?php
                       if(!$_SESSION['nombreAdmin']==""){
                           echo ' 
