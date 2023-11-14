@@ -1,16 +1,17 @@
 <?php
-    include './library/configServer.php';
-    include './library/consulSQL.php';
-    include './process/securityPanel.php';
+    include './../../Config/configSQL.php';
+    include './../../Modelo/consulSQL.php';
+    include './../../Controlador/securityPanel.php';
+    include './viewAdmin.php';
 ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <title>Admin</title>
-    <?php include './inc/link.php'; ?>
+    <?php include './../references/link.php'; ?>
 </head>
 <body id="container-page-configAdmin">
-    <?php include './inc/navbar.php'; ?>
+    <?php include './../references/navigationBar.php'; ?>
     <section id="prove-product-cat-config">
         <div class="container">
           <div class="page-header">
@@ -19,37 +20,37 @@
           <!--====  Nav Tabs  ====-->
           <ul class="nav nav-tabs nav-justified" style="margin-bottom: 15px;">
             <li>
-              <a href="configAdmin.php?view=product">
+              <a href="./viewAdmin.php?view=product">
                 <i class="fa fa-cubes" aria-hidden="true"></i> &nbsp; Productos
               </a>
             </li>
             <li>
-              <a href="configAdmin.php?view=provider">
+              <a href="./viewAdmin.php?view=provider">
                 <i class="fa fa-truck" aria-hidden="true"></i> &nbsp; Proveedores
               </a>
             </li>
             <li>
-              <a href="configAdmin.php?view=category">
+              <a href="./viewAdmin.php?view=category">
                 <i class="fa fa-shopping-basket" aria-hidden="true"></i> &nbsp; Categorías
               </a>
             </li>
             <li>
-              <a href="configAdmin.php?view=admin">
+              <a href="./viewAdmin.php?view=admin">
                 <i class="fa fa-users" aria-hidden="true"></i> &nbsp; Administradores
               </a>
             </li>
             <li>
-              <a href="configAdmin.php?view=order">
+              <a href="./viewAdmin.php?view=order">
                 <i class="fa fa-shopping-cart" aria-hidden="true"></i> &nbsp; Pedidos
               </a>
             </li>
             <li>
-              <a href="configAdmin.php?view=bank">
+              <a href="./viewAdmin.php?view=bank">
                 <i class="fa fa-university" aria-hidden="true"></i> &nbsp; Cuenta bancaria
               </a>
             </li>
             <li>
-              <a href="configAdmin.php?view=account">
+              <a href="./viewAdmin.php?view=account">
                 <i class="fa fa-address-card" aria-hidden="true"></i> &nbsp; Mi cuenta
               </a>
             </li>
@@ -59,7 +60,7 @@
             $WhiteList=["product","productlist","productinfo","provider","providerlist","providerinfo","category","categorylist","categoryinfo","admin","adminlist","order","bank","account"];
             if(isset($content)){
               if(in_array($content, $WhiteList) && is_file("./admin/".$content."-view.php")){
-                include "./admin/".$content."-view.php";
+                include "./../../Controlador/".$content."-view.php";
               }else{
                 echo '<h2 class="text-center">Lo sentimos, la opción que ha seleccionado no se encuentra disponible</h2>';
               }
@@ -69,6 +70,6 @@
           ?>
         </div>
     </section>
-    <?php include './inc/footer.php'; ?>
+    <?php include './../references/footer.php'; ?>
 </body>
 </html>

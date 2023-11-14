@@ -24,19 +24,19 @@
             <div class="item active">
                 <img src="./assets/img/slider1.jpg" alt="slider1">
                 <div class="carousel-caption">
-                    Text Slider 1
+                    
                 </div>
             </div>
             <div class="item">
                 <img src="./assets/img/slider2.jpg" alt="slider2">
                 <div class="carousel-caption">
-                    Text Slider 2
+                    
                 </div>
             </div>
             <div class="item">
                 <img src="./assets/img/slider3.jpg" alt="slider3">
                 <div class="carousel-caption">
-                    Text Slider 3
+                    
                 </div>
             </div>
         </div>
@@ -113,12 +113,12 @@
                 </div>
 
                 <div class="col-xs-12 col-sm-6">
-                    <img src="assets/img/tv.png" alt="Smart-TV" class="img-responsive" style="width: 70%; display: block; margin: 0 auto;">
+                    <img src="/assets/img/tv.png" alt="Smart-TV" class="img-responsive" style="width: 70%; display: block; margin: 0 auto;">
                 </div>
             </div>
         </div>
     </section>
 
-    <?php include 'src/Vista/references/footer.php'; ?> <!--Referencia por cambiar -->
+    <?php include 'Vista/references/footer.php'; ?> <!--Referencia por cambiar -->
 </body>
 </html>
