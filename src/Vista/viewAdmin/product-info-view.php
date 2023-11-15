@@ -21,7 +21,7 @@
                 	$producto=ejecutarSQL::consultar("SELECT * FROM producto WHERE CodigoProd='$code'");
                 	$prod=mysqli_fetch_array($producto, MYSQLI_ASSOC);
                 ?>
-                <form action="./src/Controlador/ControlAdmin/product-update.php" method="POST" enctype="multipart/form-data" class="FormCatElec" data-form="update">
+                <form action="/Controlador/ControlAdmin/product-update.php" method="POST" enctype="multipart/form-data" class="FormCatElec" data-form="update">
                 	<input type="hidden" name="code-old-prod" value="<?php echo $prod['CodigoProd']; ?>">
                     <div class="container-fluid">
                         <div class="row">

@@ -1,6 +1,4 @@
-<p class="lead">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, culpa quasi tempore assumenda, perferendis sunt. Quo consequatur saepe commodi maxime, sit atque veniam blanditiis molestias obcaecati rerum, consectetur odit accusamus.
-</p>
+<p class="lead"></p>
 <ul class="breadcrumb" style="margin-bottom: 5px;">
     <li>
         <a href="admin-home.php?view=admin">
@@ -11,7 +9,7 @@
         <a href="admin-home.php?view=admin-list"><i class="fa fa-list-ol" aria-hidden="true"></i> &nbsp; Administradores del sistema</a>
     </li>
     <li>
-        <a href="admin-home.php?view=account"><i class="fa fa-address-card" aria-hidden="true"></i> &nbsp; Mi cuenta</a>
+        <a href="admin-home.php?view=acount"><i class="fa fa-address-card" aria-hidden="true"></i> &nbsp; Mi cuenta</a>
     </li>
 </ul>
 <div class="container">
@@ -19,7 +17,7 @@
         <div class="col-xs-12">
             <div class="container-form-admin">
                 <h3 class="text-info text-center">Agregar un nuevo administrador</h3>
-                <form action="./src/Controlador/ControlAdmin/admin-register.php" method="POST" role="form" class="FormCatElec" data-form="save">
+                <form action="/Controlador/ControlAdmin/admin-register.php" method="POST" role="form" class="FormCatElec" data-form="save">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-xs-12">

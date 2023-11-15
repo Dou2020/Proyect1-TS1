@@ -1,14 +1,14 @@
 <?php
 include '../../Config/configDB.php';
 include '../../Modelo/consulSQL.php';
-include '../../Controlador/securityPanel.php';
+include '../../Controlador/ControlAdmin/securityPanel.php';
 ?>
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <title>Admin</title>
-    <?php include 'Vista/references/link.php'; ?>
+    <?php include './../references/link.php'; ?>
 </head>
 
 <body id="container-page-configAdmin">
@@ -51,14 +51,14 @@ include '../../Controlador/securityPanel.php';
                     </a>
                 </li>
                 <li>
-                    <a href="admin-home.php?view=account">
+                    <a href="admin-home.php?view=acount">
                         <i class="fa fa-address-card" aria-hidden="true"></i> &nbsp; Mi cuenta
                     </a>
                 </li>
             </ul>
             <?php
             $content = $_GET['view'];
-            $WhiteList = ["product", "product-list", "product-info", "provider", "provider-list", "provider-info", "category", "category-list", "category-info", "admin", "admin-list", "order", "bank", "account"];
+            $WhiteList = ["product", "product-list", "product-info", "provider", "provider-list", "provider-info", "category", "category-list", "category-info", "admin", "admin-list", "order", "bank", "acount"];
             if (isset($content)) {
                 if (in_array($content, $WhiteList) && is_file("./".$content."-view.php")) {
                     include "./".$content."-view.php";

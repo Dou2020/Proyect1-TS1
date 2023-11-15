@@ -34,7 +34,7 @@ $(document).ready(function() {
             closeOnConfirm: false,
             animation: "slide-from-top"
         }, function(){
-            window.location='process/logout.php';
+            window.location='../../Controlador/ControlUser/logout.php';
         });
     });
     /*Funcion para enviar datos de formularios con ajax*/

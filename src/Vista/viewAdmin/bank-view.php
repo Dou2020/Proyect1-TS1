@@ -45,7 +45,7 @@
                 }else{
             ?>
               <div class="container-form-admin">
-              <form action="./src/Controlador/ControlAdmin/bank-register.php" method="POST" role="form" class="FormCatElec" data-form="save">
+              <form action="/Controlador/ControlAdmin/bank-register.php" method="POST" role="form" class="FormCatElec" data-form="save">
                 <h3 class="text-info text-center">Agregar Cuenta de banco</h3>
                 <div class="container-fluid">
                     <div class="row">

@@ -1,7 +1,4 @@
 <p class="lead">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, culpa quasi tempore assumenda, perferendis sunt.
-    Quo consequatur saepe commodi maxime, sit atque veniam blanditiis molestias obcaecati rerum, consectetur odit
-    accusamus.
 </p>
 <div class="container">
     <div class="row">
@@ -12,7 +9,7 @@
                 $admin = ejecutarSQL::consultar("SELECT * FROM administrador WHERE id='" . $_SESSION['adminID'] . "'");
                 $dataAdmin = mysqli_fetch_array($admin, MYSQLI_ASSOC);
                 ?>
-                <form action="./src/Controlador/ControlAdmin/admin-update.php" method="POST" role="form" class="FormCatElec"
+                <form action="/Controlador/ControlAdmin/admin-update.php" method="POST" role="form" class="FormCatElec"
                     data-form="update">
                     <input type="hidden" name="admin-code" value="<?php echo $_SESSION['adminID']; ?>">
                     <input type="hidden" name="admin-name-old" value="<?php echo $dataAdmin['Nombre']; ?>">

@@ -72,7 +72,7 @@ include '../../Modelo/consulSQL.php';
                                <p><?php echo $prod['NombreProd']; ?></p>
                                <p>$<?php echo $prod['Precio']; ?></p>
                                <p class="text-center">
-                                   <a href="./infoProducts.php?CodigoProd=<?php echo $prod['CodigoProd']; ?>" class="btn btn-primary btn-raised btn-sm btn-block"><i class="fa fa-plus"></i>&nbsp; Detalles</a>
+                                   <a href="./infoProduct.php?CodigoProd=<?php echo $prod['CodigoProd']; ?>" class="btn btn-primary btn-raised btn-sm btn-block"><i class="fa fa-plus"></i>&nbsp; Detalles</a>
                                </p>
 
                              </div>

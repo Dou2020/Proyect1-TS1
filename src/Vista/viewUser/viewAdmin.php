@@ -49,14 +49,14 @@
               </a>
             </li>
             <li>
-              <a href="./viewAdmin.php?view=account">
+              <a href="./viewAdmin.php?view=acount">
                 <i class="fa fa-address-card" aria-hidden="true"></i> &nbsp; Mi cuenta
               </a>
             </li>
           </ul>
           <?php
             $content=$_GET['view'];
-            $WhiteList=["product","product-list","product-info","provider","provider-list","provider-info","category","category-list","category-info","admin","admin-list","order","bank","account"];
+            $WhiteList=["product","product-list","product-info","provider","provider-list","provider-info","category","category-list","category-info","admin","admin-list","order","bank","acount"];
             if(isset($content)){
               if(in_array($content, $WhiteList) && is_file("./../viewAdmin/".$content."-view.php")){
                 include "./../viewAdmin/".$content."-view.php";

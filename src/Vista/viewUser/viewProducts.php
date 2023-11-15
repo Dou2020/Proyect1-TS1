@@ -88,7 +88,7 @@ include '../../Modelo/consulSQL.php';
                 ?>
                     <div class="col-xs-12 col-sm-6 col-md-4">
                          <div class="thumbnail">
-                           <img class="img-product" src="./assets/img-products/<?php if($prod['Imagen']!="" && is_file("./assets/img-products/".$prod['Imagen'])){ echo $prod['Imagen']; }else{ echo "default.png"; } ?>
+                           <img class="img-product" src="/assets/img-products/<?php if($prod['Imagen']!="" && is_file("./assets/img-products/".$prod['Imagen'])){ echo $prod['Imagen']; }else{ echo "default.png"; } ?>
                            ">
                            <div class="caption">
                              <h3><?php echo $prod['Marca']; ?></h3>

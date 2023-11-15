@@ -1,5 +1,4 @@
 <p class="lead">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, culpa quasi tempore assumenda, perferendis sunt. Quo consequatur saepe commodi maxime, sit atque veniam blanditiis molestias obcaecati rerum, consectetur odit accusamus.
 </p>
 <ul class="breadcrumb" style="margin-bottom: 5px;">
     <li>
@@ -61,7 +60,7 @@
 	                        		<a href="admin-home.php?view=provider-info&code=<?php echo $prov['NITProveedor']; ?>" class="btn btn-raised btn-xs btn-success">Actualizar</a>
 	                        	</td>
 	                        	<td class="text-center">
-	                        		<form action="./src/Controlador/ControlAdmin/provider-delete.php" method="POST" class="FormCatElec" data-form="delete">
+	                        		<form action="/Controlador/ControlAdmin/provider-delete.php" method="POST" class="FormCatElec" data-form="delete">
 	                        			<input type="hidden" name="nit-prove" value="<?php echo $prov['NITProveedor']; ?>">
 	                        			<button type="submit" class="btn btn-raised btn-xs btn-danger">Eliminar</button>	
 	                        		</form>

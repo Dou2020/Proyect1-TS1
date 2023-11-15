@@ -1,14 +1,13 @@
 <p class="lead">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, culpa quasi tempore assumenda, perferendis sunt. Quo consequatur saepe commodi maxime, sit atque veniam blanditiis molestias obcaecati rerum, consectetur odit accusamus.
 </p>
 <ul class="breadcrumb" style="margin-bottom: 5px;">
     <li>
-        <a href="admmin-home.php?view=product">
+        <a href="/Vista/viewAdmin/admin-home.php?view=product">
             <i class="fa fa-plus-circle" aria-hidden="true"></i> &nbsp; Nuevo producto
         </a>
     </li>
     <li>
-        <a href="admin-home.php?view=product-list"><i class="fa fa-list-ol" aria-hidden="true"></i> &nbsp; Productos en tienda</a>
+        <a href="/Vista/viewAdmin/admin-home.php?view=product-list"><i class="fa fa-list-ol" aria-hidden="true"></i> &nbsp; Productos en tienda</a>
     </li>
 </ul>
 <div class="container">
@@ -16,7 +15,7 @@
         <div class="col-xs-12">
             <div class="container-form-admin">
                 <h3 class="text-primary text-center">Agregar un producto a la tienda</h3>
-                <form action="./src/Controlador/ControlAdmin/product-register.php" method="POST" enctype="multipart/form-data" class="FormCatElec" data-form="save">
+                <form action="/Controlador/ControlAdmin/product-register.php" method="POST" enctype="multipart/form-data" class="FormCatElec" data-form="save">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-xs-12">

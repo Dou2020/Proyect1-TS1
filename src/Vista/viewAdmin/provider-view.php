@@ -1,5 +1,4 @@
 <p class="lead">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, culpa quasi tempore assumenda, perferendis sunt. Quo consequatur saepe commodi maxime, sit atque veniam blanditiis molestias obcaecati rerum, consectetur odit accusamus.
 </p>
 <ul class="breadcrumb" style="margin-bottom: 5px;">
     <li>
@@ -16,7 +15,7 @@
 		<div class="col-xs-12">
             <div class="container-form-admin">
                 <h3 class="text-primary text-center">Agregar un nuevo proveedor</h3>
-                <form action="./src/Controlador/ControlAdmin/provider-register.php" method="POST" class="FormCatElec" data-form="save">
+                <form action="/Controlador/ControlAdmin/provider-register.php" method="POST" class="FormCatElec" data-form="save">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-xs-12">

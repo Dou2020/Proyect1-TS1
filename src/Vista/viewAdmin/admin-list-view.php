@@ -1,5 +1,4 @@
 <p class="lead">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, culpa quasi tempore assumenda, perferendis sunt. Quo consequatur saepe commodi maxime, sit atque veniam blanditiis molestias obcaecati rerum, consectetur odit accusamus.
 </p>
 <ul class="breadcrumb" style="margin-bottom: 5px;">
     <li>
@@ -11,7 +10,7 @@
         <a href="admin-home.php?view=admin-list"><i class="fa fa-list-ol" aria-hidden="true"></i> &nbsp; Administradores del sistema</a>
     </li>
     <li>
-        <a href="admin-home.php?view=account"><i class="fa fa-address-card" aria-hidden="true"></i> &nbsp; Mi cuenta</a>
+        <a href="admin-home.php?view=acount"><i class="fa fa-address-card" aria-hidden="true"></i> &nbsp; Mi cuenta</a>
     </li>
 </ul>
 <div class="container">
@@ -52,7 +51,7 @@
                                 <td class="text-center"><?php echo $cr; ?></td>
                                 <td class="text-center"><?php echo $adm['Nombre']; ?></td>
                                 <td class="text-center">
-                                    <form action="./src/Controlador/ControlAdmin/admin-delete.php" method="POST" class="FormCatElec" data-form="delete">
+                                    <form action="/Controlador/ControlAdmin/admin-delete.php" method="POST" class="FormCatElec" data-form="delete">
                                         <input type="hidden" name="admin-code" value="<?php echo $adm['id']; ?>">
                                         <button type="submit" class="btn btn-raised btn-xs btn-danger">Eliminar</button>    
                                     </form>

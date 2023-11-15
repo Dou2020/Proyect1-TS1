@@ -1,5 +1,4 @@
 <p class="lead">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, culpa quasi tempore assumenda, perferendis sunt. Quo consequatur saepe commodi maxime, sit atque veniam blanditiis molestias obcaecati rerum, consectetur odit accusamus.
 </p>
 <ul class="breadcrumb" style="margin-bottom: 5px;">
     <li>
@@ -21,7 +20,7 @@
                     $proveedor=ejecutarSQL::consultar("SELECT * FROM proveedor WHERE NITProveedor='$code'");
                     $prov=mysqli_fetch_array($proveedor, MYSQLI_ASSOC);
                 ?>
-                <form action="./src/Controlador/ControlAdmin/provider-update.php" method="POST" class="FormCatElec" data-form="update">
+                <form action="/Controlador/ControlAdmin/provider-update.php" method="POST" class="FormCatElec" data-form="update">
                     <input type="hidden" name="nit-prove-old" value="<?php echo $prov['NITProveedor']; ?>">
                     <div class="container-fluid">
                         <div class="row">
