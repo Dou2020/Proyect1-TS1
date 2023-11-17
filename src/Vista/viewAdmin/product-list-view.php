@@ -4,7 +4,7 @@
 <ul class="breadcrumb" style="margin-bottom: 5px;">
     <li>
         <a href="admin-home.php?view=product">
-            <i class="fa fa-plus-circle" aria-hidden="true"></i> &nbsp; Nuevo product0o
+            <i class="fa fa-plus-circle" aria-hidden="true"></i> &nbsp; Nuevo producto
         </a>
     </li>
     <li>
