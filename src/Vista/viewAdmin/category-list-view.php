@@ -55,7 +55,7 @@
 	                        		<a href="admin-home.php?view=category-info&code=<?php echo $cate['CodigoCat']; ?>" class="btn btn-raised btn-xs btn-success">Actualizar</a>
 	                        	</td>
 	                        	<td class="text-center">
-	                        		<form action="./src/Controlador/ControlAdmin/category-delete.php" method="POST" class="FormCatElec" data-form="delete">
+	                        		<form action="/Controlador/ControlAdmin/category-delete.php" method="POST" class="FormCatElec" data-form="delete">
 	                        			<input type="hidden" name="categ-code" value="<?php echo $cate['CodigoCat']; ?>">
 	                        			<button type="submit" class="btn btn-raised btn-xs btn-danger">Eliminar</button>	
 	                        		</form>

@@ -1,6 +1,3 @@
-<p class="lead">
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum voluptates, corporis nisi dolores cumque obcaecati perferendis, quisquam, ipsa commodi labore molestias dolor itaque nam cupiditate totam, ea dicta? Sit, asperiores?
-</p>
 <ul class="breadcrumb" style="margin-bottom: 5px;">
     <li>
         <a href="admin-home.php?view=product">
@@ -83,7 +80,7 @@
                         		<a href="admin-home.php?view=product-info&code=<?php echo $prod['CodigoProd']; ?>" class="btn btn-raised btn-xs btn-success">Actualizar</a>
                         	</td>
                         	<td class="text-center">
-                        		<form action="./src/Controlador/ControlAdmin/product-delete.php" method="POST" class="FormCatElec" data-form="delete">
+                        		<form action="/Controlador/ControlAdmin/product-delete.php" method="POST" class="FormCatElec" data-form="delete">
                         			<input type="hidden" name="prod-code" value="<?php echo $prod['CodigoProd']; ?>">
                         			<button type="submit" class="btn btn-raised btn-xs btn-danger">Eliminar</button>	
                         		</form>

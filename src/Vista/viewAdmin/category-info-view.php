@@ -1,6 +1,3 @@
-<p class="lead">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, culpa quasi tempore assumenda, perferendis sunt. Quo consequatur saepe commodi maxime, sit atque veniam blanditiis molestias obcaecati rerum, consectetur odit accusamus.
-</p>
 <ul class="breadcrumb" style="margin-bottom: 5px;">
     <li>
         <a href="admin-home.php?view=category">
@@ -21,7 +18,7 @@
                 	$categoria=ejecutarSQL::consultar("SELECT * FROM categoria WHERE CodigoCat='$code'");
                 	$cate=mysqli_fetch_array($categoria, MYSQLI_ASSOC);
                 ?>
-                <form action="./src/Controlador/ControlAdmin/category-update.php" method="POST" class="FormCatElec" data-form="update">
+                <form action="/Controlador/ControlAdmin/category-update.php" method="POST" class="FormCatElec" data-form="update">
                 	<input type="hidden" name="categ-code-old" value="<?php echo $cate['CodigoCat']; ?>">
                     <div class="container-fluid">
                         <div class="row">

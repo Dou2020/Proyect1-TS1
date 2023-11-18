@@ -41,7 +41,7 @@ if(consultasSQL::UpdateSQL("proveedor", "NombreProveedor='$nameProveUp',Direccio
     if(mysqli_num_rows($checP)<=0){
         if(consultasSQL::DeleteSQL('producto', "CodigoProd='".$codeProd."'")){
             $imagen=$tmp['Imagen'];
-            $carpeta='../assets/img-products/';
+            $carpeta='../../assets/img-products/';
             $directorio=$carpeta.$imagen;
             if(is_file($directorio)){
               chmod($directorio, 0777);
