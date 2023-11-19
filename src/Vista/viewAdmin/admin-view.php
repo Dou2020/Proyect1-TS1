@@ -1,4 +1,3 @@
-<p class="lead"></p>
 <ul class="breadcrumb" style="margin-bottom: 5px;">
     <li>
         <a href="admin-home.php?view=admin">

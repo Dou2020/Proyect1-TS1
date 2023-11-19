@@ -48,7 +48,7 @@ include './../../Modelo/consulSQL.php';
                                 }else{
                                     echo '<p class="text-center text-danger lead">No hay existencias de este producto</p><br>';
                                 }
-                                if($fila['Imagen']!="" && is_file("./../../assets/img-products/".$fila['Imagen'])){ 
+                                if($fila['Imagen']!="" && is_file("/assets/img-products/".$fila['Imagen'])){ 
                                     $imagenFile="./../../assets/img-products/".$fila['Imagen']; 
                                 }else{ 
                                     $imagenFile="./../../assets/img-products/default.png"; 

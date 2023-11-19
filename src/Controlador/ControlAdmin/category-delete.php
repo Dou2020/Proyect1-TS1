@@ -1,7 +1,7 @@
 <?php
 session_start();
-include '../library/configServer.php';
-include '../library/consulSQL.php';
+include '../../Config/configDB.php';
+include '../../Modelo/consulSQL.php';
 
 $nitOldProveUp=consultasSQL::clean_string($_POST['nit-prove-old']);
 $nameProveUp=consultasSQL::clean_string($_POST['prove-name']);
