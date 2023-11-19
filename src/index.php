@@ -62,8 +62,8 @@
               	<?php
                 //Ejecuta la consulta de los ultimos productos para mostrar
                 // No conecta a la base de datos
-                  include 'src/Modelo/configServer.php'; //<!--Referencia por cambiar -->\
-                  include 'src/Modelo/consulSQL.php'; //<!--Referencia por cambiar --asdasd>
+                include 'Config/configDB.php';
+                include 'Modelo/consulSQL.php';
                   $consulta= ejecutarSQL::consultar("SELECT * FROM producto WHERE Stock > 0 AND Estado='Activo' ORDER BY id DESC LIMIT 7");
                   $totalproductos = mysqli_num_rows($consulta);
                   if($totalproductos>0){
@@ -71,7 +71,7 @@
                 ?>
                 <div class="col-xs-12 col-sm-6 col-md-4">
                      <div class="thumbnail">
-                       <img class="img-product" src="/assets/img-products/<?php if($fila['Imagen']!="" && is_file("./assets/img-products/".$fila['Imagen'])){ echo $fila['Imagen']; }else{ echo "default.png"; } ?>">
+                       <img class="img-product" src="./assets/img-products/<?php if($fila['Imagen']!="" && is_file("./assets/img-products/".$fila['Imagen'])){ echo $fila['Imagen']; }else{ echo "default.png"; } ?>">
                        <div class="caption">
                        		<h3><?php echo $fila['Marca']; ?></h3>
                             <p><?php echo $fila['NombreProd']; ?></p>
@@ -86,7 +86,7 @@
                               <p>$<?php echo $fila['Precio']; ?></p>
                              <?php endif; ?>
                         <p class="text-center">
-                            <a href="src/Vista/viewUser/infoProduct.php?CodigoProd=<?php echo $fila['CodigoProd']; ?>" class="btn btn-primary btn-sm btn-raised btn-block"><i class="fa fa-plus"></i>&nbsp; Detalles</a>
+                            <a href="Vista/viewUser/infoProduct.php?CodigoProd=<?php echo $fila['CodigoProd']; ?>" class="btn btn-primary btn-sm btn-raised btn-block"><i class="fa fa-plus"></i>&nbsp; Detalles</a>
                         </p>
                        </div>
                      </div>
@@ -99,6 +99,7 @@
               	?>  
             </div>
          </div>
+
     </section>
     <section id="reg-info-index">
         <div class="container">
@@ -113,12 +114,12 @@
                 </div>
 
                 <div class="col-xs-12 col-sm-6">
-                    <img src="/assets/img/tv.png" alt="Smart-TV" class="img-responsive" style="width: 70%; display: block; margin: 0 auto;">
+                    <img src="assets/img/tv.png" alt="Smart-TV" class="img-responsive" style="width: 70%; display: block; margin: 0 auto;">
                 </div>
             </div>
         </div>
     </section>
 
-    <?php include 'Vista/references/footer.php'; ?> <!--Referencia por cambiar -->
+    <?php include 'Vista/references/footer.php';?>
 </body>
 </html>
