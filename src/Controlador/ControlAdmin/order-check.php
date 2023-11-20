@@ -1,7 +1,7 @@
 <?php
 session_start(); 
-include '../../Config/configDB.php';
-include '../../Modelo/consulSQL.php';
+include './../../Config/configDB.php';
+include './../../Modelo/consulSQL.php';
 
 $code=consultasSQL::clean_string($_POST['code']);
 $selOrder=ejecutarSQL::consultar("SELECT Estado FROM venta WHERE NumPedido='".$code."'");

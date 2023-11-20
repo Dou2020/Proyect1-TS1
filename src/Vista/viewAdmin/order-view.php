@@ -1,5 +1,3 @@
-<p class="lead">
----</p>
 <div class="container">
   <div class="row">
         <div class="col-xs-12">
@@ -57,14 +55,14 @@
                             <td class="text-center">
                                 <a href="#!" class="btn btn-raised btn-xs btn-success btn-block btn-up-order" data-code="<?php echo $order['NumPedido']; ?>">Actualizar</a>
                                 <?php 
-                                    if(is_file("./assets/comprobantes/".$order['Adjunto'])){
-                                      echo '<a href="./assets/comprobantes/'.$order['Adjunto'].'" target="_blank" class="btn btn-raised btn-xs btn-info btn-block">Comprobante</a>';
+                                    if(is_file("./../../assets/comprobantes/".$order['Adjunto'])){
+                                      echo '<a href="./../../assets/comprobantes/'.$order['Adjunto'].'" target="_blank" class="btn btn-raised btn-xs btn-info btn-block">Comprobante</a>';
                                     }
                                 ?>
-                                <a href="../../Report/pdf/factura-pdf.php?id=<?php echo $order['NumPedido'];  ?>" class="btn btn-raised btn-xs btn-primary btn-block" target="_blank">Imprimir</a>
+                                <a href="/Report/pdf/factura-pdf.php?id=<?php echo $order['NumPedido'];  ?>" class="btn btn-raised btn-xs btn-primary btn-block" target="_blank">Imprimir</a>
                             </td>
                             <td class="text-center">
-                              <form action="./src/Controlador/ControlAdmin/order-delete.php" method="POST" class="FormCatElec" data-form="delete">
+                              <form action="/Controlador/ControlAdmin/order-delete.php" method="POST" class="FormCatElec" data-form="delete">
                                 <input type="hidden" name="num-pedido" value="<?php echo $order['NumPedido']; ?>">
                                 <button type="submit" class="btn btn-raised btn-xs btn-danger">Eliminar</button>  
                               </form>
@@ -134,7 +132,7 @@
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           <h5 class="modal-title text-center text-primary" id="myModalLabel">Actualizar estado del pedido</h5>
         </div>
-        <form action="./src/Controlador/ControlAdmin/order-update.php" method="POST" class="FormCatElec" data-form="update">
+        <form action="/Controlador/ControlAdmin/order-update.php" method="POST" class="FormCatElec" data-form="update">
             <div id="OrderSelect"></div>
             <div class="modal-footer">
               <button type="submit" class="btn btn-success btn-raised btn-sm">Actualizar</button>
@@ -151,7 +149,7 @@
             e.preventDefault();
             var code=$(this).attr('data-code');
             $.ajax({
-                url:'./src/Controlador/ControlAdmin/order-check.php',
+                url:'./../../Controlador/ControlAdmin/order-check.php',
                 type: 'POST',
                 data: 'code='+code,
                 success:function(data){

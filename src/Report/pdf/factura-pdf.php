@@ -1,6 +1,6 @@
 <?php
 session_start();
-require './pdf/factura-pdf.php';
+require '/Report/pdf/factura-pdf.php';
 include '../Config/configDB.php';
 include '../Modelo/consulSQL.php';
 $id=$_GET['id'];

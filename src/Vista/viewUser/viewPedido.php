@@ -29,7 +29,7 @@
                         <div class="row">
                           <div class="col-xs-10 col-xs-offset-1">
                             <p class="text-center lead">Selecciona un metodo de pago</p>
-                            <img class="img-responsive center-all-contens" src="assets/img/credit-card.png">
+                            <img class="img-responsive center-all-contens" src="/assets/img/credit-card.png">
                             <p class="text-center">
                               <button class="btn btn-lg btn-raised btn-success btn-block" data-toggle="modal" data-target="#PagoModalTran">Transaccion Bancaria</button>
                             </p>
@@ -118,7 +118,7 @@
     </section>
     <div class="modal fade" id="PagoModalTran" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
-        <form class="modal-content FormCatElec" action="process/confirmcompra.php" method="POST" role="form" data-form="save">
+        <form class="modal-content FormCatElec" action="/Controlador/ControlUser/client-confirm-carrito.php" method="POST" role="form" data-form="save">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <h4 class="modal-title" id="myModalLabel">Pago por transaccion bancaria</h4>
@@ -150,8 +150,8 @@
                   </select>
                </div>
                 <div class="form-group">
-                    <label>DNI del cliente</label>
-                    <input class="form-control" type="text" name="Cedclien" placeholder="DNI del cliente" maxlength="15" required="">
+                    <label>NIT del cliente</label>
+                    <input class="form-control" type="text" name="Cedclien" placeholder="NIT del cliente" maxlength="15" required="">
                 </div>
                 <div class="form-group">
                       <input type="file" name="comprobante">

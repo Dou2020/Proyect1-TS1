@@ -36,7 +36,7 @@
                                                 <td> " . $codeProd['cantidad'] . "</td>
                                                 <td> " . $pref * $codeProd['cantidad'] . "</td>
                                                 <td>
-                                                    <form action='process/quitarproducto.php' method='POST' class='FormCatElec' data-form=''>
+                                                    <form action='/Controlador/ControlUser/client-delete-carrito.php' method='POST' class='FormCatElec' data-form=''>
                                                         <input type='hidden' value='" . $codeProd['producto'] . "' name='codigo'>
                                                         <button class='btn btn-danger btn-raised btn-xs'>Eliminar</button>
                                                     </form>
@@ -52,8 +52,8 @@
                         echo '
                             <p class="text-center">
                             <a href="/Vista/viewUser/viewProducts.php" class="btn btn-primary btn-raised btn-lg">Seguir comprando</a>
-                            <a href="process/vaciarcarrito.php" class="btn btn-success btn-raised btn-lg">Vaciar el carrito</a>
-                            <a href="pedido.php" class="btn btn-danger btn-raised btn-lg">Confirmar el pedido</a>
+                            <a href="/Controlador/ControlUser/client-empty-carrito.php" class="btn btn-success btn-raised btn-lg">Vaciar el carrito</a>
+                            <a href="/Vista/viewUser/viewPedido.php" class="btn btn-danger btn-raised btn-lg">Confirmar el pedido</a>
                             </p>
                             ';
                     } else {

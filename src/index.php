@@ -109,7 +109,7 @@
                         <p><i class="fa fa-users fa-4x"></i></p>
                         <h3>Registrate</h3>
                         <p>Registrate como cliente de <span class="tittles-pages-logo">MINI-SHOP</span> en un sencillo formulario para poder completar tus pedidos</p>
-                        <p><a href="registration.php" class="btn btn-info btn-raised btn-block">Registrarse</a></p>   
+                        <p><a href="/Vista/viewUser/viewRegistration.php" class="btn btn-info btn-raised btn-block">Registrarse</a></p>   
                    </article>
                 </div>
 
