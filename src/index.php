@@ -62,8 +62,8 @@
               	<?php
                 //Ejecuta la consulta de los ultimos productos para mostrar
                 // No conecta a la base de datos
-                include 'Config/configDB.php';
-                include 'Modelo/consulSQL.php';
+                include './Config/configDB.php';
+                include './Modelo/consulSQL.php';
                   $consulta= ejecutarSQL::consultar("SELECT * FROM producto WHERE Stock > 0 AND Estado='Activo' ORDER BY id DESC LIMIT 7");
                   $totalproductos = mysqli_num_rows($consulta);
                   if($totalproductos>0){
@@ -108,7 +108,7 @@
                    <article style="margin-top:5%;">
                         <p><i class="fa fa-users fa-4x"></i></p>
                         <h3>Registrate</h3>
-                        <p>Registrate como cliente de <span class="tittles-pages-logo">STORE</span> en un sencillo formulario para poder completar tus pedidos</p>
+                        <p>Registrate como cliente de <span class="tittles-pages-logo">MINI-SHOP</span> en un sencillo formulario para poder completar tus pedidos</p>
                         <p><a href="registration.php" class="btn btn-info btn-raised btn-block">Registrarse</a></p>   
                    </article>
                 </div>

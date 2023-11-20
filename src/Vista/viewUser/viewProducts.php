@@ -1,6 +1,6 @@
 <?php
-include '../../Config/configDB.php';
-include '../../Modelo/consulSQL.php';
+include './../../Config/configDB.php';
+include './../../Modelo/consulSQL.php';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -36,7 +36,7 @@ include '../../Modelo/consulSQL.php';
                         <?php 
                           while($cate=mysqli_fetch_array($checkAllCat, MYSQLI_ASSOC)){
                               echo '
-                                <li><a href="./infoProduct.php?categ='.$cate['CodigoCat'].'">'.$cate['Nombre'].'</a></li>
+                                <li><a href="./viewProducts.php?categ='.$cate['CodigoCat'].'">'.$cate['Nombre'].'</a></li>
                                 <li role="separator" class="divider"></li>
                               ';
                           }

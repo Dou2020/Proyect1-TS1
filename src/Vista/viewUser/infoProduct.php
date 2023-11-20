@@ -32,7 +32,7 @@ include './../../Modelo/consulSQL.php';
                                 <h4><strong>Categoria: </strong>'.$fila['Nombre'].'</h4>';
                                 if($fila['Stock']>=1){
                                     if($_SESSION['nombreAdmin']!="" || $_SESSION['nombreUser']!=""){
-                                        echo '<form action="/vistaCarrito.php" method="POST" class="FormCatElec" data-form="">
+                                        echo '<form action="./../../Controlador/ControlUser/client-carrito.php" method="POST" class="FormCatElec" data-form="">
                                             <input type="hidden" value="'.$fila['CodigoProd'].'" name="codigo">
                                             <label class="text-center"><small>Agrega la cantidad de productos que añadiras al carrito de compras (Maximo '.$fila['Stock'].' productos)</small></label>
                                             <div class="form-group">
@@ -48,7 +48,7 @@ include './../../Modelo/consulSQL.php';
                                 }else{
                                     echo '<p class="text-center text-danger lead">No hay existencias de este producto</p><br>';
                                 }
-                                if($fila['Imagen']!="" && is_file("/assets/img-products/".$fila['Imagen'])){ 
+                                if($fila['Imagen']!="" && is_file("./../../assets/img-products/".$fila['Imagen'])){ 
                                     $imagenFile="./../../assets/img-products/".$fila['Imagen']; 
                                 }else{ 
                                     $imagenFile="./../../assets/img-products/default.png"; 
@@ -56,7 +56,6 @@ include './../../Modelo/consulSQL.php';
                                 echo '<br>
                                 <a href="./viewProducts.php" class="btn btn-lg btn-primary btn-raised btn-block"><i class="fa fa-mail-reply"></i>&nbsp;&nbsp;Regresar a la tienda</a>
                             </div>
-                                
 
                             <div class="col-xs-12 col-sm-6">
                                 <br><br><br>

@@ -51,7 +51,7 @@
                         echo '<tr class="bg-danger"><td colspan="2">Total</td><td><strong>' . $sumaA . '</strong></td><td><strong>$' . number_format($suma, 2) . '</strong></td></tr></table><div class="ResForm"></div>';
                         echo '
                             <p class="text-center">
-                            <a href="product.php" class="btn btn-primary btn-raised btn-lg">Seguir comprando</a>
+                            <a href="/Vista/viewUser/viewProducts.php" class="btn btn-primary btn-raised btn-lg">Seguir comprando</a>
                             <a href="process/vaciarcarrito.php" class="btn btn-success btn-raised btn-lg">Vaciar el carrito</a>
                             <a href="pedido.php" class="btn btn-danger btn-raised btn-lg">Confirmar el pedido</a>
                             </p>
