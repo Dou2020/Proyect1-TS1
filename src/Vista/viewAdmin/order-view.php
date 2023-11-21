@@ -59,7 +59,6 @@
                                       echo '<a href="./../../assets/comprobantes/'.$order['Adjunto'].'" target="_blank" class="btn btn-raised btn-xs btn-info btn-block">Comprobante</a>';
                                     }
                                 ?>
-                                <a href="/Report/pdf/factura-pdf.php?id=<?php echo $order['NumPedido'];  ?>" class="btn btn-raised btn-xs btn-primary btn-block" target="_blank">Imprimir</a>
                             </td>
                             <td class="text-center">
                               <form action="/Controlador/ControlAdmin/order-delete.php" method="POST" class="FormCatElec" data-form="delete">

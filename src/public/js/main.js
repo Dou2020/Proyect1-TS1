@@ -8,7 +8,7 @@ $(document).ready(function() {
         e.preventDefault();
         var code=$(this).attr('data-code');
         $.ajax({
-            url: './process/selectDataUser.php',
+            url: './../../Controlador/ControlUser/user-select.php',
             type: 'POST',
             data: 'code='+code,
             success:function(data){

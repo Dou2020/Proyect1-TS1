@@ -35,7 +35,7 @@
                       break;
                     }
                     $imgFinalName=$codeProd.$imgEx;
-                    if(move_uploaded_file($_FILES['img']['tmp_name'],"../../assets/img-products/".$imgFinalName)){
+                    if(move_uploaded_file($_FILES['img']['tmp_name'],"./../../assets/img-products/".$imgFinalName)){
                         if(consultasSQL::InsertSQL("producto", "CodigoProd, NombreProd, CodigoCat, Precio, Descuento, Modelo, Marca, Stock, NITProveedor, Imagen, Nombre, Estado", "'$codeProd','$nameProd','$cateProd','$priceProd', '$descProd', '$modelProd','$marcaProd','$stockProd','$codePProd','$imgFinalName','$adminProd', '$estadoProd'")){
                             echo '<script>
                                 swal({
