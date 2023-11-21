@@ -77,7 +77,7 @@
                                     ?> 
                                         <tr>
                                             <td><?php echo $rw['Fecha']; ?></td>
-                                            <td>$<?php echo $rw['TotalPagar']; ?></td>
+                                            <td>Q<?php echo $rw['TotalPagar']; ?></td>
                                             <td>
                                             <?php
                                               switch ($rw['Estado']) {

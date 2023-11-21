@@ -1,7 +1,7 @@
 <?php
 	session_start();
-	include '../../library/configServer.php';
-	include '../../library/consulSQL.php';
+	include '../../Config/configDB.php';
+	include '../../Modelo/consulSQL.php';
 
 	$code=consultasSQL::clean_string($_POST['code']);
 
@@ -16,7 +16,7 @@
                   </div>
                   <div class="col-xs-12">
                     <div class="form-group label-floating">
-                      <label class="control-label"><i class="fa fa-address-card-o" aria-hidden="true"></i>&nbsp; DNI</label>
+                      <label class="control-label"><i class="fa fa-address-card-o" aria-hidden="true"></i>&nbsp; NIT</label>
                       <input class="form-control" type="text" required readonly name="clien-nit" value="'.$DataUser['NIT'].'">
                     </div>
                   </div>
